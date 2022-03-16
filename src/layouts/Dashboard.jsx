@@ -17,21 +17,27 @@ import { Outlet } from "react-router-dom";
 const pages = [
    {
       id: 1,
-      href: "/admin/home",
+      href: "/react-navigation-practice-1/admin/home",
       title: "Home",
    },
    {
       id: 2,
-      href: "/admin/pageone",
+      href: "/react-navigation-practice-1/admin/pageone",
       title: "PageOne",
    },
    {
       id: 3,
-      href: "/admin/about",
+      href: "/react-navigation-practice-1/admin/about",
       title: "About",
    },
 ];
-const settings = ["Logout"];
+const settings = [
+   {
+      id: 1,
+      href: "react-navigation-practice-1/",
+      title: "Logout",
+   },
+];
 
 export default function Dashboard() {
    const navigate = useNavigate();
@@ -157,14 +163,14 @@ export default function Dashboard() {
                      >
                         {settings.map((setting) => (
                            <MenuItem
-                              key={setting}
+                              key={setting.id}
                               onClick={() => {
                                  handleCloseUserMenu();
-                                 navigate("/");
+                                 navigate(setting.href);
                               }}
                            >
                               <Typography textAlign="center">
-                                 {setting}
+                                 {setting.title}
                               </Typography>
                            </MenuItem>
                         ))}

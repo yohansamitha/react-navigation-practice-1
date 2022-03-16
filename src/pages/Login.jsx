@@ -8,7 +8,7 @@ export default function Login() {
          Login
          <button
             onClick={() => {
-               navigate("/admin/home");
+               navigate("/react-navigation-practice-1/admin/home");
             }}
          >
             login
