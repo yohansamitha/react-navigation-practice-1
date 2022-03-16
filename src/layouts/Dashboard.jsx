@@ -17,24 +17,24 @@ import { Outlet } from "react-router-dom";
 const pages = [
    {
       id: 1,
-      href: "/react-navigation-practice-1/admin/home",
+      href: "/admin/home",
       title: "Home",
    },
    {
       id: 2,
-      href: "/react-navigation-practice-1/admin/pageone",
+      href: "/admin/pageone",
       title: "PageOne",
    },
    {
       id: 3,
-      href: "/react-navigation-practice-1/admin/about",
+      href: "/admin/about",
       title: "About",
    },
 ];
 const settings = [
    {
       id: 1,
-      href: "react-navigation-practice-1/",
+      href: "/",
       title: "Logout",
    },
 ];
