@@ -9,7 +9,7 @@ import AuthLayout from "./layouts/AuthLayout";
 const routes = (isAuthenticated) => [
    {
       path: "/admin",
-      element: isAuthenticated ? <Dashboard /> : <Navigate to="/login" />,
+      element: isAuthenticated ? <Dashboard /> : <Navigate to="/" />,
       children: [
          //  { path: "deliveries/ongoing", element: <OngoingDeliveries /> },
          //  { path: "dashboard/all/requests", element: <AllDeliveryRequests /> },
